@@ -43,6 +43,9 @@ namespace TabletopTweaks.Base.NewContent.Feats {
                 c.m_TrickRidingFeature = TrickRiding.ToReference<BlueprintFeatureReference>();
             });
             FeatTools.AddAsFeat(TrickRiding);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection.AddFeatures(TrickRiding);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection6.AddFeatures(TrickRiding);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection10.AddFeatures(TrickRiding);
         }
     }
 }
