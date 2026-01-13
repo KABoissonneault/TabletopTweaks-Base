@@ -33,6 +33,9 @@ namespace TabletopTweaks.Base.NewContent.Feats {
             if (TTTContext.AddedContent.Feats.IsDisabled("MountedSkirmisher")) { return; }
             if (TTTContext.Fixes.BaseFixes.IsDisabled("MountedActions")) { return; }
             FeatTools.AddAsFeat(MountedSkirmisher);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection.AddFeatures(MountedSkirmisher);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection6.AddFeatures(MountedSkirmisher);
+            FeatTools.Selections.SoheiMountedCombatFeatSelection10.AddFeatures(MountedSkirmisher);
         }
     }
 }
